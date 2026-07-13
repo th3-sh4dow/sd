@@ -1,0 +1,129 @@
+<svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="50%" stop-color="#0d1321"/>
+      <stop offset="100%" stop-color="#0a0e17"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="50%" stop-color="#7c4dff"/>
+      <stop offset="100%" stop-color="#00e676"/>
+    </linearGradient>
+    <linearGradient id="accentSoft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#7c4dff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00e676" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="vignette" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="900" height="260" rx="18" fill="url(#bg)"/>
+
+  <!-- faint circuit lines -->
+  <g stroke="url(#accentSoft)" stroke-width="1" fill="none" opacity="0.5">
+    <path d="M0,40 H180 L200,60 H420">
+      <animate attributeName="opacity" values="0.15;0.5;0.15" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M900,210 H720 L700,190 H520">
+      <animate attributeName="opacity" values="0.5;0.15;0.5" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0,220 H120 L140,200 H260 L280,220 H360">
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="200" cy="60" r="3" fill="#00e5ff">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="190" r="3" fill="#7c4dff">
+      <animate attributeName="opacity" values="1;0.2;1" dur="3.1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <rect width="900" height="260" rx="18" fill="url(#vignette)"/>
+  <rect x="1.5" y="1.5" width="897" height="257" rx="17" fill="none" stroke="url(#accent)" stroke-width="1.4" opacity="0.55"/>
+
+  <!-- terminal window -->
+  <g transform="translate(60,50)">
+    <rect width="780" height="160" rx="12" fill="#0b0f19" stroke="#1c2230" stroke-width="1"/>
+    <rect width="780" height="30" rx="12" fill="#111726"/>
+    <rect y="18" width="780" height="12" fill="#111726"/>
+    <circle cx="20" cy="15" r="5" fill="#ff5f57"/>
+    <circle cx="40" cy="15" r="5" fill="#febc2e"/>
+    <circle cx="60" cy="15" r="5" fill="#28c840"/>
+    <text x="390" y="19" text-anchor="middle" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" fill="#5b6478">root@karan &#8212; profile.sh</text>
+
+    <text x="26" y="70" font-family="'JetBrains Mono','Fira Code',monospace" font-size="18" fill="#00e676">&#10148;</text>
+    <text x="46" y="70" font-family="'JetBrains Mono','Fira Code',monospace" font-size="18" fill="#8b94a8">whoami --role</text>
+
+    <g opacity="0">
+      <animate attributeName="opacity" keyTimes="0.0000;0.1985;0.2000;1.0000" values="1;1;0;0" dur="20.0s" repeatCount="indefinite"/>
+      <clipPath id="clip0">
+        <rect x="0" y="90" width="0" height="30">
+          <animate attributeName="width" from="0" to="124" begin="0.0s" dur="0.9s" fill="freeze" repeatCount="indefinite" repeatDur="20.0s"/>
+        </rect>
+      </clipPath>
+      <g clip-path="url(#clip0)">
+        <text x="26" y="112" font-family="'JetBrains Mono','Fira Code',monospace" font-size="24" font-weight="600" fill="url(#accent)" filter="url(#glow)">Web Developer</text>
+      </g>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" keyTimes="0.0000;0.1985;0.2000;0.3985;0.4000;1.0000" values="0;0;1;1;0;0" dur="20.0s" repeatCount="indefinite"/>
+      <clipPath id="clip1">
+        <rect x="0" y="90" width="0" height="30">
+          <animate attributeName="width" from="0" to="156" begin="4.0s" dur="0.9s" fill="freeze" repeatCount="indefinite" repeatDur="20.0s"/>
+        </rect>
+      </clipPath>
+      <g clip-path="url(#clip1)">
+        <text x="26" y="112" font-family="'JetBrains Mono','Fira Code',monospace" font-size="24" font-weight="600" fill="url(#accent)" filter="url(#glow)">Android Developer</text>
+      </g>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" keyTimes="0.0000;0.3985;0.4000;0.5985;0.6000;1.0000" values="0;0;1;1;0;0" dur="20.0s" repeatCount="indefinite"/>
+      <clipPath id="clip2">
+        <rect x="0" y="90" width="0" height="30">
+          <animate attributeName="width" from="0" to="188" begin="8.0s" dur="0.9s" fill="freeze" repeatCount="indefinite" repeatDur="20.0s"/>
+        </rect>
+      </clipPath>
+      <g clip-path="url(#clip2)">
+        <text x="26" y="112" font-family="'JetBrains Mono','Fira Code',monospace" font-size="24" font-weight="600" fill="url(#accent)" filter="url(#glow)">Cybersecurity Analyst</text>
+      </g>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" keyTimes="0.0000;0.5985;0.6000;0.7985;0.8000;1.0000" values="0;0;1;1;0;0" dur="20.0s" repeatCount="indefinite"/>
+      <clipPath id="clip3">
+        <rect x="0" y="90" width="0" height="30">
+          <animate attributeName="width" from="0" to="164" begin="12.0s" dur="0.9s" fill="freeze" repeatCount="indefinite" repeatDur="20.0s"/>
+        </rect>
+      </clipPath>
+      <g clip-path="url(#clip3)">
+        <text x="26" y="112" font-family="'JetBrains Mono','Fira Code',monospace" font-size="24" font-weight="600" fill="url(#accent)" filter="url(#glow)">Penetration Tester</text>
+      </g>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" keyTimes="0.0000;0.7985;0.8000;0.9985;1.0000" values="0;0;1;1;0" dur="20.0s" repeatCount="indefinite"/>
+      <clipPath id="clip4">
+        <rect x="0" y="90" width="0" height="30">
+          <animate attributeName="width" from="0" to="164" begin="16.0s" dur="0.9s" fill="freeze" repeatCount="indefinite" repeatDur="20.0s"/>
+        </rect>
+      </clipPath>
+      <g clip-path="url(#clip4)">
+        <text x="26" y="112" font-family="'JetBrains Mono','Fira Code',monospace" font-size="24" font-weight="600" fill="url(#accent)" filter="url(#glow)">Blue Team Defender</text>
+      </g>
+    </g>
+    <rect x="26" y="92" width="3" height="26" fill="#00e5ff">
+      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.45;0.5;0.95;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+
+    <text x="26" y="150" font-family="'JetBrains Mono','Fira Code',monospace" font-size="13" fill="#4b5468">// building things &amp; breaking things, responsibly</text>
+  </g>
+</svg>
