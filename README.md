@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/banner.svg" width="100%" alt="banner"/>
+<img src="./banner.svg" width="100%" alt="banner"/>
 
 <br/>
 
@@ -98,5 +98,5 @@ currently:
 <br/>
 
 <div align="center">
-<img src="./assets/footer.svg" width="100%" alt="footer"/>
+<img src="./footer.svg" width="100%" alt="footer"/>
 </div>
